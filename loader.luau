@@ -1,6 +1,5 @@
 -- Monster TD Hub — Public Loader
--- Замени YOUR_GITHUB_USER и YOUR_REPO на свой ник и название репозитория!
-local BASE_URL = "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/"
+local BASE_URL = "https://raw.githubusercontent.com/RandomUsername161/--x7q9-zm4k-ffff--/main/"
 
 local LOBBY_PLACE_ID = 9035888777
 local GAME_PLACE_ID = 9181976110
@@ -17,7 +16,6 @@ end
 
 local targetFile = if game.PlaceId == GAME_PLACE_ID then "match.luau" else "lobby.luau"
 
--- Авто-перезагрузка при переходе между Лобби и Матчем (работает у друга без autoexec!)
 local qfn = (typeof(queue_on_teleport) == "function" and queue_on_teleport)
 	or (typeof(queueonteleport) == "function" and queueonteleport)
 if qfn and not genv.__mtdPublicQueueBound then
